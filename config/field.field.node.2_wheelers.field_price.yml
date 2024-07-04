@@ -1,0 +1,23 @@
+uuid: 4430d963-9ffe-4b3b-af49-7422e9f9648b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price
+    - node.type.2_wheelers
+id: node.2_wheelers.field_price
+field_name: field_price
+entity_type: node
+bundle: 2_wheelers
+label: Price
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 100.0
+  max: 1000000.0
+  prefix: ''
+  suffix: ' rupees only'
+field_type: decimal

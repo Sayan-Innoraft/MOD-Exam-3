@@ -1,0 +1,29 @@
+uuid: 2d3d53b2-cdc8-4f97-add4-68170ef03ba3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.fashion_block
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: bootstrap_barrio_subtheme_views_block__fashion_block_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:fashion_block-block_1'
+settings:
+  id: 'views_block:fashion_block-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /home

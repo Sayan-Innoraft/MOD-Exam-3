@@ -1,0 +1,26 @@
+uuid: 76a62c68-7a15-4d82-a3e5-6cd4460c9080
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.mobiles.field_item_image
+    - field.field.node.mobiles.field_price
+    - field.field.node.mobiles.field_small_description
+    - node.type.mobiles
+  module:
+    - user
+id: node.mobiles.teaser
+targetEntityType: node
+bundle: mobiles
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_item_image: true
+  field_price: true
+  field_small_description: true

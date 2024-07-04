@@ -1,0 +1,29 @@
+uuid: 7578421b-ccc2-4e17-9c4e-97b9bd74a41f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.mobiles_block
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: bootstrap_barrio_subtheme_views_block__mobiles_block_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:mobiles_block-block_1'
+settings:
+  id: 'views_block:mobiles_block-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /home

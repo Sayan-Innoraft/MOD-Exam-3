@@ -1,0 +1,8 @@
+uuid: 479a687f-a219-4cc7-b3a8-86b954228a94
+langcode: en
+status: true
+dependencies: {  }
+id: menus-for-content-admin-3
+label: 'Menus for Content admin 3'
+description: ''
+locked: false

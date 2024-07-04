@@ -1,0 +1,18 @@
+uuid: 4b102f44-f5fa-45c4-83eb-ff93c2d20d3e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Electronics
+type: electronics
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

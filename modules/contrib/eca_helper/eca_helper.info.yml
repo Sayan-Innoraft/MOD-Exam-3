@@ -1,0 +1,12 @@
+name: ECA Helper
+type: module
+description: Add helper functions for ECA module.
+core_version_requirement: ^10.3 || ^11
+package: ECA
+dependencies:
+  - eca:eca (^2)
+
+# Information added by Drupal.org packaging script on 2024-06-26
+version: '2.0.0-beta1'
+project: 'eca_helper'
+datestamp: 1719375070

@@ -1,0 +1,26 @@
+uuid: 6c9bb22d-7519-46fe-9a8a-f214b1b218c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.electronics.field_item_image
+    - field.field.node.electronics.field_price
+    - field.field.node.electronics.field_small_description
+    - node.type.electronics
+  module:
+    - user
+id: node.electronics.teaser
+targetEntityType: node
+bundle: electronics
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_item_image: true
+  field_price: true
+  field_small_description: true

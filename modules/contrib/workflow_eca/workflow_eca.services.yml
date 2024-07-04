@@ -1,0 +1,12 @@
+services:
+  workflow_eca.subscriber:
+    class: Drupal\workflow_eca\EventSubscriber\WorkflowEca
+    parent: eca.default_event_subscriber
+    tags:
+      - { name: event_subscriber }
+  workflow_eca.hook_handler:
+    class: Drupal\workflow_eca\HookHandler
+    arguments: ['@eca.trigger_event']
+    calls:
+      - [setContentEntityTypes, ['@eca.service.content_entity_types']]
+      - [setWorkflowManager, ['@workflow.manager']]

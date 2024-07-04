@@ -1,0 +1,26 @@
+uuid: 82ca644a-bc8d-4021-8741-0f9643c0fba4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.home_furniture.field_item_image
+    - field.field.node.home_furniture.field_price
+    - field.field.node.home_furniture.field_small_description
+    - node.type.home_furniture
+  module:
+    - user
+id: node.home_furniture.teaser
+targetEntityType: node
+bundle: home_furniture
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_item_image: true
+  field_price: true
+  field_small_description: true

@@ -1,0 +1,29 @@
+uuid: 8da69a6b-21b8-43f6-bcfe-f0c3d72eec75
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.electronics_block
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: bootstrap_barrio_subtheme_views_block__electronics_block_block_1
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:electronics_block-block_1'
+settings:
+  id: 'views_block:electronics_block-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /home

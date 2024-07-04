@@ -1,0 +1,20 @@
+uuid: 84319e10-06df-43ad-b1ad-6291d3250746
+langcode: en
+status: true
+dependencies: {  }
+id: sends_mail
+label: 'sends mail'
+description: 'sends mail to super admin'
+type: send_email
+target_entity_type: null
+target_bundle: null
+tags: {  }
+settings:
+  subject: 'New Item Added'
+  use_site_mail_as_sender: false
+  from: ''
+  to: superadmin@flipkart.com
+  format: text
+  body:
+    format: full_html
+    value: '<p>new item is added by <span style="-webkit-text-stroke-width:0px;background-color:rgb(245, 248, 255);color:rgb(35, 36, 41);display:inline !important;float:none;font-family:&quot;system-ui&quot;, -apple-system, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif;font-size:16px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">{{current_user-&gt;name}}</span></p>'
