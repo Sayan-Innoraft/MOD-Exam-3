@@ -1,0 +1,19 @@
+uuid: 94891d4f-c561-4ef7-a8ed-6ccf7ef3eb3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_small_description
+    - node.type.appliances
+id: node.appliances.field_small_description
+field_name: field_small_description
+entity_type: node
+bundle: appliances
+label: 'Small Description'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

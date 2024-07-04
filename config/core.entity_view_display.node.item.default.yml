@@ -1,0 +1,153 @@
+uuid: 281451fb-b5ae-4c74-8f86-0d8686179f6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.item.field_category
+    - field.field.node.item.field_item_image
+    - field.field.node.item.field_price
+    - field.field.node.item.field_small_description
+    - field.field.node.item.layout_builder__layout
+    - node.type.item
+  module:
+    - image
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          2382f491-cff9-4629-ab70-2503b20abc5e:
+            uuid: 2382f491-cff9-4629-ab70-2503b20abc5e
+            region: first
+            configuration:
+              id: 'field_block:node:item:field_price'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_decimal
+                label: above
+                settings:
+                  thousand_separator: ''
+                  decimal_separator: .
+                  scale: 2
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          fe20ceab-b2b5-4cb5-96c3-d7af69229876:
+            uuid: fe20ceab-b2b5-4cb5-96c3-d7af69229876
+            region: first
+            configuration:
+              id: 'field_block:node:item:field_item_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          7ccf60cf-aeb0-4534-abfe-0830367c1421:
+            uuid: 7ccf60cf-aeb0-4534-abfe-0830367c1421
+            region: second
+            configuration:
+              id: 'field_block:node:item:field_small_description'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          56883674-66fd-4300-b18c-d1c20411fac6:
+            uuid: 56883674-66fd-4300-b18c-d1c20411fac6
+            region: second
+            configuration:
+              id: 'field_block:node:item:field_category'
+              label: Category
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings:
+          lb_plus:
+            uuid: ca9e80f4-08d9-4079-9318-43d817fba9e7
+id: node.item.default
+targetEntityType: node
+bundle: item
+mode: default
+content:
+  field_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_item_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_price:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_small_description:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  layout_builder__layout: true

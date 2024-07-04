@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Workflow ECA module file.
+ */
+
+use Drupal\Core\Entity\ContentEntityInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\workflow_eca\HookHandler;
+
+/**
+ * Helper method that returns the hook handler service.
+ *
+ * @return \Drupal\workflow_eca\HookHandler
+ *   The hook handler service.
+ */
+function _workflow_eca_hook_handler(): HookHandler {
+  return \Drupal::service('workflow_eca.hook_handler');
+}
+
+/**
+ * Implements hook_entity_insert().
+ */
+function workflow_eca_entity_insert(EntityInterface $entity) {
+  if ($entity instanceof ContentEntityInterface) {
+    _workflow_eca_hook_handler()->transition($entity, TRUE);
+  }
+}
+
+/**
+ * Implements hook_entity_update().
+ */
+function workflow_eca_entity_update(EntityInterface $entity) {
+  if ($entity instanceof ContentEntityInterface) {
+    _workflow_eca_hook_handler()->transition($entity);
+  }
+}

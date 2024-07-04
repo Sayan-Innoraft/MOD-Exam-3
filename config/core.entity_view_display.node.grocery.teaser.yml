@@ -1,0 +1,26 @@
+uuid: fc2dc644-f7f6-4db0-a705-6e7ffafabb49
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.grocery.field_item_image
+    - field.field.node.grocery.field_price
+    - field.field.node.grocery.field_small_description
+    - node.type.grocery
+  module:
+    - user
+id: node.grocery.teaser
+targetEntityType: node
+bundle: grocery
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_item_image: true
+  field_price: true
+  field_small_description: true

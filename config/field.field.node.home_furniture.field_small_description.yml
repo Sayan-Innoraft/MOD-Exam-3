@@ -1,0 +1,19 @@
+uuid: a4d7cdd8-061b-4d22-9610-fa9c8d525f09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_small_description
+    - node.type.home_furniture
+id: node.home_furniture.field_small_description
+field_name: field_small_description
+entity_type: node
+bundle: home_furniture
+label: 'Small Description'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

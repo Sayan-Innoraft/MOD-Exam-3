@@ -1,0 +1,13 @@
+name: ECA Helper for Workflow
+type: module
+description: Add helper functions for ECA Workflow module.
+core_version_requirement: ^9 || ^10
+package: ECA
+dependencies:
+  - eca_helper:eca_helper
+  - drupal:content_moderation
+
+# Information added by Drupal.org packaging script on 2024-06-26
+version: '2.0.0-beta1'
+project: 'eca_helper'
+datestamp: 1719375070

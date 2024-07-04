@@ -1,0 +1,23 @@
+uuid: bc2b158a-c6e3-45ca-bd87-1d1042bd8a3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price
+    - node.type.fashion
+id: node.fashion.field_price
+field_name: field_price
+entity_type: node
+bundle: fashion
+label: Price
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 100.0
+  max: 1000000.0
+  prefix: ''
+  suffix: ' rupees only'
+field_type: decimal

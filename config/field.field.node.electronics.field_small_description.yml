@@ -1,0 +1,19 @@
+uuid: c379fb02-fbf5-48b5-b15b-329d4df876b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_small_description
+    - node.type.electronics
+id: node.electronics.field_small_description
+field_name: field_small_description
+entity_type: node
+bundle: electronics
+label: 'Small Description'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

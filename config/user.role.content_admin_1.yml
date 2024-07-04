@@ -1,0 +1,26 @@
+uuid: 10cfda21-5ec9-4929-a791-df3d487e60ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.appliances
+    - node.type.electronics
+    - node.type.grocery
+    - node.type.item
+  module:
+    - admin_toolbar_search
+    - block
+    - field_ui
+    - node
+id: content_admin_1
+label: 'Content Admin 1'
+weight: 4
+is_admin: null
+permissions:
+  - 'administer blocks'
+  - 'administer node display'
+  - 'create appliances content'
+  - 'create electronics content'
+  - 'create grocery content'
+  - 'create item content'
+  - 'use admin toolbar search'

@@ -1,0 +1,23 @@
+uuid: 2e773428-016e-43ca-917c-73a76d3b99ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price
+    - node.type.appliances
+id: node.appliances.field_price
+field_name: field_price
+entity_type: node
+bundle: appliances
+label: Price
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 100.0
+  max: null
+  prefix: ''
+  suffix: ' rupees only'
+field_type: decimal

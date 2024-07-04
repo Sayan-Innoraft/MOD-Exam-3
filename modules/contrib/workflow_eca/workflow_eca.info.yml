@@ -1,0 +1,12 @@
+name: 'Workflow ECA'
+description: 'Workflow components for ECA.'
+type: module
+core_version_requirement: ^9 || ^10
+dependencies:
+  - workflow:workflow
+  - eca:eca
+
+# Information added by Drupal.org packaging script on 2024-03-12
+version: '1.0.0-beta1'
+project: 'workflow_eca'
+datestamp: 1710280935

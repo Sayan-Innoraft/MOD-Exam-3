@@ -1,0 +1,33 @@
+uuid: 6fa9da59-3b72-4cfb-a935-868a5c57fc1d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ed0ef8f0-e9da-4d17-b42e-7ac32f9e0e5f'
+  module:
+    - block_content
+    - node
+  theme:
+    - bootstrap_barrio_subtheme
+id: bootstrap_barrio_subtheme_grocery
+theme: bootstrap_barrio_subtheme
+region: header_form
+weight: 0
+provider: null
+plugin: 'block_content:ed0ef8f0-e9da-4d17-b42e-7ac32f9e0e5f'
+settings:
+  id: 'block_content:ed0ef8f0-e9da-4d17-b42e-7ac32f9e0e5f'
+  label: Grocery
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      grocery: grocery

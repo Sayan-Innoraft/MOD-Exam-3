@@ -1,0 +1,13 @@
+uuid: 71b9242a-dc60-44a1-8e2d-6528b3c21273
+langcode: en
+status: true
+dependencies: {  }
+id: mail_to_super_admin
+label: 'mail to super admin'
+description: 'sends email to super admin every time a new content is created.'
+reacts_on: entity_insert
+target_entity_type: node
+target_bundle: item
+items: {  }
+tags: {  }
+enabled: null

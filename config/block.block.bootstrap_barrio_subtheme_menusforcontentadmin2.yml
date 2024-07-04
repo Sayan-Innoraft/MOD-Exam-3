@@ -1,0 +1,33 @@
+uuid: 18e94c48-56d7-4b44-84a1-3780b1bafd83
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menus-for-content-admin-2
+  module:
+    - system
+    - user
+  theme:
+    - bootstrap_barrio_subtheme
+id: bootstrap_barrio_subtheme_menusforcontentadmin2
+theme: bootstrap_barrio_subtheme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:menus-for-content-admin-2'
+settings:
+  id: 'system_menu_block:menus-for-content-admin-2'
+  label: 'Menus for Content admin 2'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      content_admin_2: content_admin_2

@@ -1,0 +1,17 @@
+name: flipkart
+recipe: drupal10
+config:
+  webroot: .
+  via: nginx
+  drush: true
+  xdebug: true
+  php: 8.3
+proxy:
+  mailhog:
+    - mailhog.lndo.site
+services:
+  mailhog:
+    type: mailhog
+    hogfrom:
+      - appserver
+    portforward: true

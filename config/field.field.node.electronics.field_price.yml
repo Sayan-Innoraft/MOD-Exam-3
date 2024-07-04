@@ -1,0 +1,23 @@
+uuid: a5d17dd5-3ec0-4938-a885-1fbf63e2e2bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price
+    - node.type.electronics
+id: node.electronics.field_price
+field_name: field_price
+entity_type: node
+bundle: electronics
+label: Price
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 100.0
+  max: null
+  prefix: ''
+  suffix: ' rupees only'
+field_type: decimal

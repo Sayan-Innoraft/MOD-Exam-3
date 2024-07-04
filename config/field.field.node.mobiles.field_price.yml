@@ -1,0 +1,23 @@
+uuid: d4b3d44f-5a1d-46f7-b655-6ea4719075a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price
+    - node.type.mobiles
+id: node.mobiles.field_price
+field_name: field_price
+entity_type: node
+bundle: mobiles
+label: Price
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 100.0
+  max: null
+  prefix: ''
+  suffix: ' rupees only'
+field_type: decimal
